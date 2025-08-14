@@ -110,17 +110,47 @@
 </div>
 </section>
 
-<!-- 视频展示 -->
-<section class="hero teaser">
+<!-- 自定义内容区块 -->
+<section class="section">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="static/images/video_thumbnail.jpg" id="hail-teaser" autoplay controls muted loop height="100%">
-        <source src="static/videos/hail_demo.mp4" type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        HAIL framework demonstration: Mixed reality teleoperation, assembly tasks execution, and policy comparison
-      </h2>
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        
+        <!-- 斜体文字 -->
+        <div class="content has-text-centered">
+          <p class="is-italic" style="font-size: 1.1rem; margin-bottom: 2rem;">
+            "HAIL is a human-in-the-loop imitation learning framework designed for complex robotic assembly tasks under real-world conditions."
+          </p>
+        </div>
+        
+        <!-- 图片 -->
+        <div class="has-text-centered" style="margin-bottom: 1.5rem;">
+          <img 
+            src="static/images/fig_chapter1_new.jpg" 
+            alt="HAIL System Overview" 
+            style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+          >
+        </div>
+        
+        <!-- 图片说明文字 -->
+        <div class="content has-text-centered">
+          <p style="font-size: 0.9rem; color: #666;">
+            Overview of the HAIL framework. Left: Human-in-the-loop data collection system using mixed reality
+teleoperation, capturing multi-view RGB images and robot states. Middle: Standardized assembly environment with diverse
+objects, task board, synchronized cameras, and force sensing. Right: Unified learning pipeline evaluating ACT and DP across
+multiple assembly tasks and control frequencies.
+          </p>
+        </div>
+
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- 以下是原有的Abstract部分 -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <!-- ...原有Abstract内容... -->
   </div>
 </section>
   
@@ -286,7 +316,6 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            © 2024 Robotics and Automation Laboratory, Shanghai Jiao Tong University.
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
           </p>
         </div>
