@@ -134,8 +134,8 @@
         </div>
         
         <!-- 图片说明文字（两端对齐版本） -->
-        <div class="content" style="text-align: justify; text-justify: inter-word; max-width: 80%; margin: 0 auto;">
-          <p style="font-size: 0.9rem; color: #666;">
+        <div class="content" style="width: 800px; max-width: 100%; margin: 0 auto 2rem;">
+          <p style="text-align: justify;">
             Figure 1: The HAIL system architecture showing mixed reality teleoperation (left), 
             robotic assembly tasks (center), and policy learning pipeline (right). 
             This diagram illustrates the complete workflow from human demonstration 
@@ -150,12 +150,13 @@
 
 <!-- 摘要部分 -->
 <section class="section hero is-light">
-  <div class="container is-max-desktop">
+  <div class="container" style="max-width: none;">  <!-- 移除容器宽度限制 -->
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+      <div class="column" style="max-width: none; width: auto;">
+        
         <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
+        <div class="content" style="width: 1000px; max-width: 100%; margin: 0 auto 2rem;">
+          <p style="text-align: justify;">
             As manufacturing systems evolve toward flexibility and adaptability, traditional automation methods face growing limitations in handling dynamic, contact-rich assembly tasks. To bridge this gap, we present HAIL, a human-in-the-loop imitation learning framework designed for real-world industrial assembly. HAIL integrates a mixed reality demonstration system for low-cost, high-precision data collection, a standardized multi-task benchmark, and two representative policy learning approaches: Diffusion Policy (DP) and Action Chunking Transformer (ACT).The benchmark comprises eight diverse tasks, each decomposed into atomic meta actions to enable fine-grained analysis. Extensive experiments reveal that ACT excels in temporally consistent, long-horizon control, while DP exhibits robustness under high uncertainty due to its stochastic inference. Beyond algorithm comparison, we identify critical practical design insights—such as the importance of real-time inference, input preprocessing, and task simplification—for deploying imitation learning on physical robots. HAIL offers a reproducible, scalable foundation for advancing embodied intelligence in real-world robotic assembly.
           </p>
         </div>
@@ -175,7 +176,7 @@
         <h2 class="title is-3">Experiment</h2>
 
         <!-- 说明文字 -->
-        <div class="content" style="width: 800px; max-width: 100%; margin: 0 auto 2rem;">
+        <div class="content" style="width: 1000px; max-width: 100%; margin: 0 auto 2rem;">
           <p style="text-align: justify;">
             We conducted extensive experiments on eight assembly tasks, evaluating 
             both ACT and Diffusion Policy approaches. The tasks cover gear assembly, gear disassembly, hammer strike, hammer pull out,
