@@ -30,37 +30,6 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-<style>
-    /* 专门修复图片和说明文字的问题 */
-    .image-fix-container {
-      width: 130%;
-      margin-left: -15%;
-      position: relative;
-    }
-    
-    .image-fix-container img {
-      width: 100%;
-      display: block;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .caption-fix {
-      width: 100%;
-      padding: 0.5rem 0;
-      text-align: justify;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    
-    /* 响应式调整 */
-    @media (max-width: 768px) {
-      .image-fix-container {
-        width: 100%;
-        margin-left: 0;
-      }
-    }
-  </style>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -142,42 +111,42 @@
 </div>
 </section>
 
-<!-- 只修改自定义内容区块 -->
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column is-four-fifths">
-          
-          <!-- 斜体文字保持不变 -->
-          <div class="content has-text-centered">
-            <p class="is-italic" style="font-size: 1.3rem; margin-bottom: 2rem;">
-              HAIL is a human-in-the-loop imitation learning framework designed for complex robotic assembly tasks under real-world conditions.
-            </p>
-          </div>
-          
-          <!-- 修复图片和说明文字部分 -->
-          <div style="overflow: hidden; margin: 2rem 0;">
-            <div class="image-fix-container">
-              <img 
-                src="static/images/fig_chapter1_new.jpg" 
-                alt="HAIL System Overview" 
-              >
-            </div>
-            
-            <div class="caption-fix">
-              <p>
-                Left: Human-in-the-loop data collection system using mixed reality
-                teleoperation, capturing multi-view RGB images and robot states. Middle: Standardized assembly environment with diverse
-                objects, task board, synchronized cameras, and force sensing. Right: Unified learning pipeline evaluating ACT and DP across
-                multiple assembly tasks and control frequencies.
-              </p>
-            </div>
-          </div>
-
+<!-- 自定义内容区块 -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        
+        <!-- 斜体文字 -->
+        <div class="content has-text-centered">
+          <p class="is-italic" style="font-size: 1.3rem; margin-bottom: 2rem;">
+            "This innovative framework bridges the gap between human expertise and robotic precision in industrial assembly tasks."
+          </p>
         </div>
+        
+        <!-- 图片 -->
+        <div class="has-text-centered" style="margin-bottom: 1.5rem;">
+          <img 
+            src="static/images/hail_system_overview.jpg" 
+            alt="HAIL System Overview" 
+            style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+          >
+        </div>
+        
+        <!-- 图片说明文字（两端对齐版本） -->
+        <div class="content" style="text-align: justify; text-justify: inter-word; max-width: 80%; margin: 0 auto;">
+          <p style="font-size: 0.9rem; color: #666;">
+            Figure 1: The HAIL system architecture showing mixed reality teleoperation (left), 
+            robotic assembly tasks (center), and policy learning pipeline (right). 
+            This diagram illustrates the complete workflow from human demonstration 
+            to policy execution.
+          </p>
+        </div>
+
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- 摘要部分 -->
 <section class="section hero is-light">
