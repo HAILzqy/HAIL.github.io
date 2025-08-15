@@ -31,6 +31,53 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+<style>
+    /* 添加自定义样式 */
+    .image-container {
+      position: relative;
+      max-width: 130%;
+      margin: 0 auto;
+      transform: translateX(-15%);
+      width: 130%;
+    }
+    
+    .image-container img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .caption-container {
+      max-width: 130%;
+      margin: 0.5rem auto 0;
+      text-align: justify;
+      padding: 0 5%;
+      position: relative;
+      left: -15%;
+      width: 130%;
+    }
+    
+    .section-content {
+      overflow-x: hidden;
+    }
+    
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      .image-container {
+        max-width: 100%;
+        transform: translateX(0);
+        width: 100%;
+      }
+      
+      .caption-container {
+        max-width: 100%;
+        left: 0;
+        width: 100%;
+      }
+    }
+  </style>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
@@ -114,7 +161,7 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths">
+      <div class="column is-four-fifths section-content">
         
         <!-- 斜体文字 -->
         <div class="content has-text-centered">
@@ -124,24 +171,24 @@
         </div>
         
         <!-- 图片 -->
-       <div style="text-align: center; margin: 2rem 0;">
-          <!-- 图片容器（最大宽度120%） -->
-          <div style="display: inline-block; max-width: 130%; ">
-          <img 
-            src="static/images/fig_chapter1_new.jpg" 
-            alt="HAIL System Overview" 
-            style="max-width: 130%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-          >
-        </div>
-        
-        <!-- 图片说明文字 -->
-        <div style="max-width: 130%; margin: 0.5rem auto 0; text-align: justify; padding: 0 5%;">
-          <p style="font-size: 0.9rem; color: #666;">
-            Left: Human-in-the-loop data collection system using mixed reality
+        <div class="content" style="margin: 2rem 0;">
+          <!-- 图片容器（最大宽度130%） -->
+          <div class="image-container">
+            <img 
+              src="static/images/fig_chapter1_new.jpg" 
+              alt="HAIL System Overview" 
+            >
+          </div>
+          
+          <!-- 图片说明文字 -->
+          <div class="caption-container">
+            <p style="font-size: 0.9rem; color: #666;">
+              Left: Human-in-the-loop data collection system using mixed reality
 teleoperation, capturing multi-view RGB images and robot states. Middle: Standardized assembly environment with diverse
 objects, task board, synchronized cameras, and force sensing. Right: Unified learning pipeline evaluating ACT and DP across
 multiple assembly tasks and control frequencies.
-          </p>
+            </p>
+          </div>
         </div>
 
       </div>
