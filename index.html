@@ -166,10 +166,10 @@
 
 <!-- 新增的Experiment部分 -->
 <section class="section">
-  <div class="container is-max-desktop">
+   <div class="container" style="max-width: none;">  <!-- 移除容器宽度限制 -->
     <div class="columns is-centered">
       <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+        <div class="column" style="max-width: none; width: auto;">
         
         <!-- 实验说明标题 -->
         <h2 class="title is-3">Experiment</h2>
@@ -187,13 +187,12 @@
         <!-- 图片展示区 -->
         <div class="experiment-images">
           <!-- 图片1 -->
-          <div class="has-text-centered" style="margin-bottom: 2rem;">
-            <img 
-              src="static/images/fig_chapter5_1.jpg" 
-              alt="Gear Assembly Task" 
-              style="width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
-            >
-          </div>
+          <div style="margin-bottom: 2rem; overflow-x: auto;">
+          <img 
+            src="static/images/fig_chapter5_1.jpg" 
+            style="width: 1200px; max-width: none !important; height: auto; display: block; margin: 0 auto;"
+          >
+        </div>
           
           <!-- 图片2 -->
           <div class="has-text-centered" style="margin-bottom: 2rem;">
