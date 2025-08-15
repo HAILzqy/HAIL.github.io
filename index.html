@@ -30,223 +30,38 @@
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-
 <style>
-        :root {
-            --primary: #4361ee;
-            --secondary: #3a0ca3;
-            --accent: #4cc9f0;
-            --light: #f8f9fa;
-            --dark: #212529;
-        }
-        
-        body {
-            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf9 100%);
-            color: var(--dark);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-        }
-        
-        .hero-header {
-            background: linear-gradient(120deg, var(--primary), var(--secondary));
-            padding: 4rem 1.5rem;
-            color: white;
-            border-radius: 0 0 20px 20px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
-        }
-        
-        .title {
-            font-weight: 800;
-            letter-spacing: -0.5px;
-            margin-bottom: 1.5rem;
-        }
-        
-        .subtitle {
-            font-weight: 400;
-            opacity: 0.9;
-        }
-        
-        .section-box {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            padding: 2.5rem;
-            margin-bottom: 2.5rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .section-box:hover {
-            transform: translateY(-5px);
-        }
-        
-        .italic-highlight {
-            font-size: 1.4rem;
-            line-height: 1.7;
-            color: var(--secondary);
-            margin: 2.5rem 0;
-            position: relative;
-            padding: 0 2rem;
-        }
-        
-        .italic-highlight:before, .italic-highlight:after {
-            content: """;
-            font-size: 3rem;
-            color: var(--accent);
-            opacity: 0.3;
-            position: absolute;
-        }
-        
-        .italic-highlight:before {
-            top: -1rem;
-            left: 0;
-        }
-        
-        .italic-highlight:after {
-            bottom: -2rem;
-            right: 0;
-        }
-        
-        .image-container {
-            position: relative;
-            max-width: 100%;
-            margin: 0 auto;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 12px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-        }
-        
-        .image-container img {
-            width: 100%;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        
-        .image-container:hover img {
-            transform: scale(1.02);
-        }
-        
-        .caption-box {
-            background: rgba(248, 249, 250, 0.9);
-            padding: 1.2rem;
-            margin-top: 1rem;
-            border-left: 4px solid var(--primary);
-            border-radius: 0 8px 8px 0;
-            font-size: 0.95rem;
-            color: #444;
-        }
-        
-        .feature-card {
-            border-radius: 12px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            height: 100%;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-        }
-        
-        .feature-card .card-content {
-            padding: 1.5rem;
-        }
-        
-        .feature-card .icon {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1.5rem;
-        }
-        
-        .feature-card .icon i {
-            font-size: 2rem;
-            color: white;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
-        }
-        
-        .stat-box {
-            background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .stat-value {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: 0.5rem;
-        }
-        
-        .stat-label {
-            font-size: 1rem;
-            color: #666;
-        }
-        
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-        }
-        
-        .comparison-table th, .comparison-table td {
-            padding: 1rem;
-            text-align: center;
-            border: 1px solid #eee;
-        }
-        
-        .comparison-table th {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: white;
-            font-weight: 600;
-        }
-        
-        .comparison-table tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        
-        .comparison-table tr:hover {
-            background-color: #f1f7ff;
-        }
-        
-        .footer {
-            background: linear-gradient(135deg, var(--secondary), #2a075e);
-            color: white;
-            padding: 3rem 1.5rem;
-            border-radius: 20px 20px 0 0;
-        }
-        
-        @media (max-width: 768px) {
-            .hero-header {
-                padding: 2.5rem 1rem;
-            }
-            
-            .title.is-1 {
-                font-size: 2rem;
-            }
-            
-            .section-box {
-                padding: 1.5rem;
-            }
-            
-            .stats-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    /* 专门修复图片和说明文字的问题 */
+    .image-fix-container {
+      width: 130%;
+      margin-left: -15%;
+      position: relative;
+    }
+    
+    .image-fix-container img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    .caption-fix {
+      width: 100%;
+      padding: 0.5rem 0;
+      text-align: justify;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    /* 响应式调整 */
+    @media (max-width: 768px) {
+      .image-fix-container {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  </style>
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -327,35 +142,42 @@
 </div>
 </section>
 
-<!-- 自定义内容区块 -->
-<section class="section">
-        <div class="container">
-            <!-- Highlight Quote -->
-            <div class="has-text-centered">
-                <p class="italic-highlight is-italic">
-                    HAIL is a human-in-the-loop imitation learning framework designed for complex robotic assembly tasks under real-world conditions.
-                </p>
+<!-- 只修改自定义内容区块 -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          
+          <!-- 斜体文字保持不变 -->
+          <div class="content has-text-centered">
+            <p class="is-italic" style="font-size: 1.3rem; margin-bottom: 2rem;">
+              HAIL is a human-in-the-loop imitation learning framework designed for complex robotic assembly tasks under real-world conditions.
+            </p>
+          </div>
+          
+          <!-- 修复图片和说明文字部分 -->
+          <div style="overflow: hidden; margin: 2rem 0;">
+            <div class="image-fix-container">
+              <img 
+                src="static/images/fig_chapter1_new.jpg" 
+                alt="HAIL System Overview" 
+              >
             </div>
             
-            <!-- Image with Caption - Fixed Section -->
-            <div class="section-box">
-                <div class="content">
-                    <div class="image-container">
-                        <img src="https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80" 
-                             alt="HAIL System Overview">
-                    </div>
-                    <div class="caption-box">
-                        <p>
-                            <strong>Left:</strong> Human-in-the-loop data collection system using mixed reality teleoperation, capturing multi-view RGB images and robot states. 
-                            <strong>Middle:</strong> Standardized assembly environment with diverse objects, task board, synchronized cameras, and force sensing. 
-                            <strong>Right:</strong> Unified learning pipeline evaluating ACT and DP across multiple assembly tasks and control frequencies.
-                        </p>
-                    </div>
-                </div>
+            <div class="caption-fix">
+              <p>
+                Left: Human-in-the-loop data collection system using mixed reality
+                teleoperation, capturing multi-view RGB images and robot states. Middle: Standardized assembly environment with diverse
+                objects, task board, synchronized cameras, and force sensing. Right: Unified learning pipeline evaluating ACT and DP across
+                multiple assembly tasks and control frequencies.
+              </p>
             </div>
+          </div>
 
+        </div>
       </div>
-</section>
+    </div>
+  </section>
 
 <!-- 摘要部分 -->
 <section class="section hero is-light">
