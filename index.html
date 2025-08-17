@@ -60,6 +60,40 @@
       text-align: center;
       margin: 3rem 0 1.5rem;
     }
+    
+    /* 下载链接样式 */
+    .download-links {
+      width: 800px;
+      max-width: 100%;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .download-item {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .download-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    
+    .download-title {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+    }
+    
+    .download-link {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -104,6 +138,8 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
+                <!-- 注释掉三个按钮 -->
+                <!--
                 <span class="link-block">
                   <a href="static/pdfs/hail_paper.pdf" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
@@ -133,14 +169,13 @@
               <span>arXiv</span>
             </a>
           </span>
-          
+          -->
         </div>
       </div>
     </div>
   </div>
 </div>
 </section>
-
 <!-- 自定义内容区块 -->
 <section class="section">
   <div class="container" style="max-width: none;">  <!-- 移除容器宽度限制 -->
@@ -239,7 +274,32 @@
             <img src="static/videos/screw1.gif" alt="Data Collection 5" style="width: 100%; height: auto;">
           </div>
         </div>
-
+          
+         <h3 class="title is-4 subsection-title">Dataeet</h3>
+          
+<!-- 添加下载链接区域 -->
+        <div class="download-links">
+          <div class="download-item">
+            <div class="download-title">Gear assembly/disassembly</div>
+            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5" target="_blank">https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5</a>, password: sjtu</div>
+          </div>
+          <div class="download-item">
+            <div class="download-title">Hammer strike</div>
+            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a" target="_blank">https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a</a>,  password: sjtu</div>
+          </div>
+          <div class="download-item">
+            <div class="download-title">Cylinder peg insert</div>
+            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454," target="_blank">https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454</a>,  password: sjtu</div>
+          </div>
+          <div class="download-item">
+            <div class="download-title">Belt removal</div>
+            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba" target="_blank">https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba</a>,  password: sjtu</div>
+          </div>
+          <div class="download-item">
+            <div class="download-title">Nut Tightening</div>
+            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb" target="_blank">https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb</a>,  password: sjtu</div>
+          </div>
+        </div>
         <!-- 添加Evaluation Results子标题 -->
         <h3 class="title is-4 subsection-title">Evaluation Results</h3>
         
@@ -332,6 +392,19 @@ Vit and five meta actions and summarize several practical lessons for deploying 
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- BibTeX引用 -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{zhao2024hail,
+  title={HAIL: Human-in-the-loop Assembly Imitation Learning System},
+  author={Zhao, Qianyou and Wu, Duidi and Shen, Yuliang and Li, Junlai and Yu, Qiaojun and Zhang, Shuo and Qi, Jin and Hu, Jie},
+  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year={2024}
+}</code></pre>
   </div>
 </section>
   
