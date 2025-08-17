@@ -31,6 +31,36 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
+  <!-- 新增样式 -->
+  <style>
+    /* 增大标题字号并居中 */
+    .section-title {
+      font-size: 2.5rem !important;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    
+    /* GIF容器样式 */
+    .gif-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    
+    .gif-item {
+      width: 800px;
+      max-width: 100%;
+    }
+    
+    /* 子标题样式 */
+    .subsection-title {
+      font-size: 2rem !important;
+      text-align: center;
+      margin: 3rem 0 1.5rem;
+    }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -117,8 +147,8 @@
     <div class="columns is-centered">
       <div class="column" style="max-width: none; width: auto;">
 
-
-        <h2 class="title is-3">Overview</h2>
+        <!-- 增大Overview标题字号并居中 -->
+        <h2 class="title is-3 section-title">Overview</h2>
         <!-- 斜体文字 -->
         <div class="content" style="width: 1300px; max-width: 100%; margin: 0 auto 2rem;">
           <p style="text-align: justify;font-size:1.3rem;">
@@ -156,7 +186,8 @@
     <div class="columns is-centered has-text-centered">
       <div class="column" style="max-width: none; width: auto;">
         
-        <h2 class="title is-3">Abstract</h2>
+        <!-- 增大Abstract标题字号并居中 -->
+        <h2 class="title is-3 section-title">Abstract</h2>
         <div class="content" style="width: 1000px; max-width: 100%; margin: 0 auto 2rem;">
           <p style="text-align: justify; font-size:1.2rem;">
             As manufacturing systems evolve toward flexibility and adaptability, traditional automation methods face growing limitations in handling dynamic, contact-rich assembly tasks. To bridge this gap, we present HAIL, a human-in-the-loop imitation learning framework designed for real-world industrial assembly. HAIL integrates a mixed reality demonstration system for low-cost, high-precision data collection, a standardized multi-task benchmark, and two representative policy learning approaches: Diffusion Policy (DP) and Action Chunking Transformer (ACT).The benchmark comprises eight diverse tasks, each decomposed into atomic meta actions to enable fine-grained analysis. Extensive experiments reveal that ACT excels in temporally consistent, long-horizon control, while DP exhibits robustness under high uncertainty due to its stochastic inference. Beyond algorithm comparison, we identify critical practical design insights—such as the importance of real-time inference, input preprocessing, and task simplification—for deploying imitation learning on physical robots. HAIL offers a reproducible, scalable foundation for advancing embodied intelligence in real-world robotic assembly.
@@ -174,8 +205,8 @@
       <div class="columns is-centered has-text-centered">
         <div class="column" style="max-width: none; width: auto;">
         
-        <!-- 实验说明标题 -->
-        <h2 class="title is-3">Experiment</h2>
+        <!-- 增大Experiment标题字号并居中 -->
+        <h2 class="title is-3 section-title">Experiment</h2>
 
         <!-- 说明文字 -->
         <div class="content" style="width: 1000px; max-width: 100%; margin: 0 auto 2rem;">
@@ -187,6 +218,30 @@
           </p>
         </div>
 
+        <!-- 添加Data Collection子标题 -->
+        <h3 class="title is-4 subsection-title">Data Collection</h3>
+        
+        <!-- 添加5个GIF -->
+        <div class="gif-container">
+          <div class="gif-item">
+            <img src="static/videos/gear2_yellow.gif" alt="Data Collection 1" style="width: 100%; height: auto;">
+          </div>
+          <div class="gif-item">
+            <img src="static/videos/hammer2.gif" alt="Data Collection 2" style="width: 100%; height: auto;">
+          </div>
+          <div class="gif-item">
+            <img src="static/videos/peg2_quad_right.gif" alt="Data Collection 3" style="width: 100%; height: auto;">
+          </div>
+          <div class="gif-item">
+            <img src="static/videos/belt_left.gif" alt="Data Collection 4" style="width: 100%; height: auto;">
+          </div>
+          <div class="gif-item">
+            <img src="static/gifs/screw1.gif" alt="Data Collection 5" style="width: 100%; height: auto;">
+          </div>
+        </div>
+
+        <!-- 添加Evaluation Results子标题 -->
+        <h3 class="title is-4 subsection-title">Evaluation Results</h3>
         
         <!-- 图片展示区 -->
         <div class="experiment-images">
@@ -235,8 +290,8 @@
       <div class="columns is-centered has-text-centered">
         <div class="column" style="max-width: none; width: auto;">
         
-        <!-- 实验说明标题 -->
-        <h2 class="title is-3">Discussion</h2>
+        <!-- 增大Discussion标题字号并居中 -->
+        <h2 class="title is-3 section-title">Discussion</h2>
 
         <!-- 说明文字 -->
         <div class="content" style="width: 1000px; max-width: 100%; margin: 0 auto 2rem;">
