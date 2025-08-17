@@ -62,37 +62,17 @@
     }
     
     /* 下载链接样式 */
-    .download-links {
-      width: 800px;
-      max-width: 100%;
-      margin: 2rem auto;
-      padding: 1.5rem;
-      background-color: #f5f5f5;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    
-    .download-item {
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid #ddd;
-    }
-    
-    .download-item:last-child {
-      border-bottom: none;
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-    
-    .download-title {
-      font-weight: bold;
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-    
     .download-link {
       font-size: 0.95rem;
       line-height: 1.6;
+      text-align: center;
+      margin: 0.5rem 0 2rem;
+    }
+    
+    /* 机构信息样式 */
+    .institution-block {
+      display: block;
+      margin: 0.3rem 0;
     }
   </style>
 
@@ -105,7 +85,7 @@
 </head>
 <body>
 
-  <section class="hero">
+ <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
@@ -113,30 +93,30 @@
             <h1 class="title is-1 publication-title">HAIL: Human-in-the-loop Assembly Imitation Learning System</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                 <!-- 需要更改 -->
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Qianyou Zhao</a><sup>a,*</sup>,</span>
+                Qianyou Zhao<sup>a,*</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Duidi Wu</a><sup>a</sup>,</span>
+                Duidi Wu<sup>a</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Yuliang Shen</a><sup>a</sup>,</span>
+                Yuliang Shen<sup>a</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Junlai Li</a><sup>a</sup>,</span>
+                Junlai Li<sup>a</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Qiaojun Yu</a><sup>b</sup>,</span>
+                Qiaojun Yu<sup>b</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Shuo Zhang</a><sup>a</sup>,</span>
+                Shuo Zhang<sup>a</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Jin Qi</a><sup>a</sup>,</span>
+                Jin Qi<sup>a</sup>,</span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=EXAMPLE" target="_blank">Jie Hu</a><sup>a</sup>
+                Jie Hu<sup>a</sup>
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">School of Mechanical Engineering, Shanghai Jiao Tong University</span>
-              <span class="author-block">Shanghai AI Lab</span>
+              <span class="institution-block"><sup>a</sup>School of Mechanical Engineering, Shanghai Jiao Tong University</span>
+              <span class="institution-block"><sup>b</sup>Shanghai AI Lab</span>
             </div>
 
+            
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- 注释掉三个按钮 -->
@@ -262,52 +242,42 @@
           <div class="gif-item">
             <img src="static/videos/gear2_yellow.gif" alt="Data Collection 1" style="width: 100%; height: auto;">
           </div>
-           <div class="download-links">
-            <div class="download-item">
-            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5" target="_blank">https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5</a>, password: sjtu</div>
-             </div>
-           </div>
+          <div class="download-link">
+            Link: <a href="https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5" target="_blank">https://pan.sjtu.edu.cn/web/share/13bdd04e8ffb00e545d32382a83a92a5</a>, password: sjtu
+          </div>
 
           <h3 class="title is-4 subsection-title">Hammer strike</h3>
           <div class="gif-item">
             <img src="static/videos/hammer2.gif" alt="Data Collection 2" style="width: 100%; height: auto;">
           </div>
-          <div class="download-links">
-            <div class="download-item">
-            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a" target="_blank">https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a</a>,  password: sjtu</div>
+          <div class="download-link">
+            Link: <a href="https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a" target="_blank">https://pan.sjtu.edu.cn/web/share/b0a03f67d1f81ac9162e9d01dfff111a</a>, password: sjtu
           </div>
-           </div>
 
           
           <h3 class="title is-4 subsection-title">Cylinder peg insert</h3>
           <div class="gif-item">
             <img src="static/videos/peg2_quad_right.gif" alt="Data Collection 3" style="width: 100%; height: auto;">
           </div>
-          <div class="download-links">
-            <div class="download-item">
-            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454," target="_blank">https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454</a>,  password: sjtu</div>
+          <div class="download-link">
+            Link: <a href="https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454," target="_blank">https://pan.sjtu.edu.cn/web/share/1e4076facdcb2dec459e8e03d04e9454</a>, password: sjtu
           </div>
-           </div>
 
           <h3 class="title is-4 subsection-title">Belt removal</h3>
           <div class="gif-item">
             <img src="static/videos/belt_left.gif" alt="Data Collection 4" style="width: 100%; height: auto;">
           </div>
-          <div class="download-links">
-            <div class="download-item">
-            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba" target="_blank">https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba</a>,  password: sjtu</div>
+          <div class="download-link">
+            Link: <a href="https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba" target="_blank">https://pan.sjtu.edu.cn/web/share/7a9b87cb2017a74a1ae204017fc476ba</a>, password: sjtu
           </div>
-           </div>
 
           <h3 class="title is-4 subsection-title">Nut Tightening</h3>
           <div class="gif-item">
             <img src="static/videos/screw1.gif" alt="Data Collection 5" style="width: 100%; height: auto;">
           </div>
-          <div class="download-links">
-            <div class="download-item">
-            <div class="download-link">Link: <a href="https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb" target="_blank">https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb</a>,  password: sjtu</div>
+          <div class="download-link">
+            Link: <a href="https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb" target="_blank">https://pan.sjtu.edu.cn/web/share/cca791183075107326c3b2a653313bbb</a>, password: sjtu
           </div>
-           </div>
           
         </div>
           
